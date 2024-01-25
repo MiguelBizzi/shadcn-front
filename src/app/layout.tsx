@@ -28,6 +28,8 @@ export default function RootLayout({
         )}
       >
         <Header />
+
+        <hr />
         {children}
       </body>
     </html>
