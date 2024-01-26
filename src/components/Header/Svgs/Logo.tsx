@@ -1,9 +1,13 @@
-export function Logo() {
+interface Props {
+  w?: string;
+  h?: string;
+}
+export function Logo({ w = "6", h = "6" }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 256 256"
-      className="h-6 w-6 dark:text-white"
+      className={`h-${h} w-${w} dark:text-white`}
     >
       <path fill="none" d="M0 0H256V256H0z" />
       <path
